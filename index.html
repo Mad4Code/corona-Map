@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <title>CodeWithHarry Corona Map</title>
+</head>
+<body>
+    <style>
+        .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <div id='map'></div>
+    
+</body>
+
+
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoia2V0YW4tZ3VwdGEiLCJhIjoiY2tzN2lhcWNuM2h0eDJwczdsM241eG1qdSJ9.k5iAJ_Bf1GqliGKigwdTwQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom: 1,
+    center: [0,20]
+  });
+</script>
+
+<script src="index.js"></script>
+</html>
